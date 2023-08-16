@@ -1,0 +1,63 @@
+.custom-sidebar {
+  transition-property: width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.custom-sidebar.collapsed {
+  width: 4rem;
+}
+
+.custom-sidebar.collapsed .sidebar-collapsable-content {
+  visibility: hidden;
+}
+
+.custom-sidebar:not(.collapsed) .custom-sidebar-tooltip {
+  opacity: 0;
+}
+
+@media (min-width: 640px) {
+  .main-content {
+    margin-left: 16rem;
+    transition-property: margin;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .main-content.sidebar-collapsed {
+    margin-left: 20rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .nav-bar {
+    margin-left: 16rem;
+    transition-property: margin;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .nav-bar.sidebar-collapsed {
+    margin-left: 20rem;
+  }
+}
+
+.sidebar-collapsable-user-button {
+  padding: 0.5rem;
+  transition-property: padding;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.custom-sidebar.collapsed .sidebar-collapsable-user-button {
+  padding: 0.25rem;
+}
+
+.custom-sidebar.collapsed .sidebar-collapsable-user-button:hover {
+  padding: 0.25rem;
+}
+
+.table-icon-col {
+  min-width: 70px;
+  width: 70px;
+}
